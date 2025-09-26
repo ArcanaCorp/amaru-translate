@@ -1,70 +1,83 @@
-# Getting Started with Create React App
+# Shawsha App - Traductor y Aprendizaje del Quechua Shawsha
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 📖 Descripción
+Shawsha App es una aplicación educativa e interactiva que combina un **traductor bidireccional (Español ↔ Quechua Shawsha)** con un sistema de aprendizaje inspirado en plataformas como Duolingo.  
 
-## Available Scripts
+Su propósito es **preservar, difundir y enseñar** el Quechua Shawsha de manera accesible, divertida y tecnológica, con respaldo de expertos en la lengua.
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## 🚀 Características principales
+- 📚 **Diccionario integrado** (palabras y frases esenciales).
+- 🔄 **Traducción bidireccional**: Español ↔ Quechua Shawsha.
+- 🧩 **Lecciones interactivas** con niveles progresivos.
+- 🗣️ **Pronunciación y ejemplos de uso** (en desarrollo).
+- ⭐ **Retroalimentación abierta**: usuarios pueden sugerir mejoras.
+- 🔒 **Propiedad intelectual protegida**: el contenido está respaldado por un experto en la lengua.
+- 🌐 **Disponible como PWA** (se puede instalar en móviles y computadoras).
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🛠️ Tecnologías
+- **Frontend:** React.js  
+- **Backend (opcional en futuras versiones):** Node.js + Express  
+- **Base de datos (opcional en futuras versiones):** MySQL  
+- **IA local:** Motor de reglas + diccionario expandible (sin dependencias externas).
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 📂 Estructura del proyecto (versión inicial sin backend)
+shawsha-app/
+│── public/ # Archivos estáticos
+│── src/
+│ │── components/ # Componentes de React (UI)
+│ │── data/ # Diccionarios y reglas del idioma
+│ │── logic/ # Motor de traducción (JS puro)
+│ │── pages/ # Páginas principales (Inicio, Traductor, Lecciones)
+│ │── App.js # Punto de entrada React
+│ └── index.js
+│── package.json
+│── README.md
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## ⚡ Instalación y uso (modo local)
+1. Clonar el repositorio:
+   ```bash
+   git clone https://github.com/usuario/shawsha-app.git
+   cd shawsha-app
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+2. Instalar dependencias
+    ```bash
+    npm install
 
-### `npm run eject`
+3. Ejecutar en modo desarrollo:
+    ```npm start
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+4. Abrir en el navegador: http://localhost:3000
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 💡 Modelo de negocio
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- **Gratis:** traductor básico + primeras lecciones.
+- **Premium:** niveles avanzados, ejercicios interactivos y retroalimentación con IA.
+- **Cursos certificados:** aprendizaje formal con respaldo de expertos.
+- **Alianzas institucionales:** integración en escuelas y proyectos culturales.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## 👥 Créditos
 
-## Learn More
+- Contenido lingüístico: Prof. Antonio Palacios, especialista en Quechua Shawsha.
+- Desarrollo tecnológico: ARCANA CORP SAC.
+- Colaboradores: Comunidad de hablantes y estudiantes de Quechua Shawsha.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### 🔒 Licencia
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- El código fuente es de uso libre bajo la licencia MIT.
+- El contenido lingüístico (diccionarios, reglas, materiales didácticos) pertenece a su autor original y está bajo protección de propiedad intelectual.
 
-### Code Splitting
+## 🌱 Futuras mejoras
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Soporte de audio para pronunciación.
+- Modo offline completo.
+- Gamificación con puntos y recompensas.
+- Expansión a otros dialectos del Quechua.

@@ -22,7 +22,7 @@ export default function HomePage () {
 
             <header className='--header'>
                 <div className='--content'>
-                    <h1>Amaru</h1>
+                    <h1>Kuyaay</h1>
                     <div>ESP-QUE</div>
                 </div>
             </header>

@@ -1,43 +1,71 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
     <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- SEO Básico -->
+    <title>Amaru - Traductor y Lecciones de Quechua Shawsha (Jauja, Perú)</title>
+    <meta name="description" content="Amaru es una plataforma que traduce del español al quechua Shawsha y ofrece lecciones para aprender el idioma de Jauja, Perú. Basada en los estudios del profesor Antonio Palacios." />
+    <meta name="keywords" content="Amaru, traductor quechua, quechua shawsha, aprender quechua, clases de quechua, lecciones quechua, quechua Jauja, profesor Antonio Palacios, idioma quechua Perú" />
+    <meta name="author" content="ARCANA CORP - Franco, basado en el estudio del profesor Antonio Palacios" />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Amaru - Traductor y Lecciones de Quechua Shawsha (Jauja, Perú)" />
+    <meta property="og:description" content="Aprende quechua Shawsha con Amaru: traductor, lecciones interactivas y recursos basados en los estudios del profesor Antonio Palacios." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://tusitio.com" />
+    <meta property="og:image" content="%PUBLIC_URL%/logo192.png" />
+    <meta property="og:locale" content="es_PE" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Amaru - Aprende Quechua Shawsha (Traductor y Lecciones)" />
+    <meta name="twitter:description" content="Amaru no solo traduce, también enseña: aprende quechua Shawsha de Jauja, Perú con lecciones prácticas y recursos culturales." />
+    <meta name="twitter:image" content="%PUBLIC_URL%/logo192.png" />
+
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "EducationalApplication",
+            "name": "Amaru",
+            "applicationCategory": "LanguageLearningApp",
+            "operatingSystem": "Web",
+            "url": "https://tusitio.com",
+            "logo": "https://tusitio.com/logo192.png",
+            "description": "Amaru es una plataforma para traducir y aprender quechua Shawsha de Jauja, Perú. Incluye traductor español-quechua, lecciones y recursos educativos.",
+            "inLanguage": "es",
+            "educationalUse": "Aprender Quechua Shawsha",
+            "about": {
+                "@type": "Language",
+                "name": "Quechua Shawsha",
+                "alternateName": "Quechua de Jauja"
+            },
+            "author": {
+                "@type": "Person",
+                "name": "Profesor Antonio Palacios",
+                "knowsAbout": "Lingüística Andina, Quechua Shawsha"
+            },
+            "publisher": {
+                "@type": "Organization",
+                "name": "ARCANA CORP"
+            }
+        }
+    </script>
+
+    <!-- Favicon & PWA -->
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <!-- Tipografía -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
     <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
-
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-  </body>
+</body>
 </html>

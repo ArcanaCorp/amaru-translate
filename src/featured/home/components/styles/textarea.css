@@ -1,0 +1,27 @@
+.--textbox {
+    width: 100%;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.--textbox .--textarea {
+    width: 100%;
+    resize: none;
+    padding: 1rem;
+    overflow: hidden;
+    min-height: 100px;
+    border-radius: var(--radius-md);
+    background-color: var(--color-secondary);
+}
+
+.--textbox .--btn-send {
+    display: grid;
+    width: 50px;
+    height: 50px;
+    min-width: 50px;
+    place-items: center;
+    border: var(--border-default);
+    background-color: var(--color-bg);
+    border-radius: var(--radius-rounded);
+}

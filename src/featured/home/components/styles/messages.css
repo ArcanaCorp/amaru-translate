@@ -1,0 +1,37 @@
+.--row-burble {
+    width: 100%;
+    display: flex;
+    gap: .8rem;
+    align-items: center;
+    margin-bottom: .8rem;
+}
+
+.--row-burble-me {
+    justify-content: flex-end;
+}
+
+.--row-burble .--burble {
+    padding: .8rem;
+    font-size: .8rem;
+    max-width: 60%;
+    border-radius: var(--radius-md);
+    background-color: var(--color-secondary);
+}
+
+.--row-burble .--burble-response {
+    color: var(--color-white);
+    background-color: var(--color-dark);
+}
+
+.--row-burble .--btn {
+    display: none;
+    width: 30px;
+    height: 30px;
+    background: none;
+    place-items: center;
+    border-radius: var(--radius-rounded);
+}
+
+.--row-burble-response:hover .--btn {
+    display: grid;
+}

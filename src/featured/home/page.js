@@ -3,9 +3,12 @@ import Textarea from './components/Textarea';
 import Messages from './components/Messages';
 import { useEffect, useRef } from 'react';
 import { useTranslate } from './context/TranslateContext';
+import { IconMoon, IconSun } from '@tabler/icons-react';
+import { useUI } from '../context/UIContext';
 
 export default function HomePage () {
 
+    const { theme, toggleTheme } = useUI();
     const { messages } = useTranslate();
     const containerRef = useRef(null);
     
@@ -23,7 +26,10 @@ export default function HomePage () {
             <header className='--header'>
                 <div className='--content'>
                     <h1>Kuyaay</h1>
-                    <div>ESP-QUE</div>
+                    <div className='--col'>
+                        <button className='--btn --btn-lenguaje'>QUECHUA</button>
+                        <button className='--btn --btn-theme' onClick={toggleTheme}>{theme === 'light' ? <IconMoon size={24} strokeWidth={1.2} /> : <IconSun size={24} strokeWidth={1.2} />}</button>
+                    </div>
                 </div>
             </header>
             

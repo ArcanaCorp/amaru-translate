@@ -1,10 +1,8 @@
 :root {
 
     --color-white: #FFFFFF;
-    --color-secondary: #F1F1F1;
-    --color-dark: #181818;
+    --color-dark: #000000;
     --color-gray: #888888;
-    --color-bg: #FFFFFF;
 
     --radius-md: 20px;
     --radius-rounded: 999px;
@@ -13,6 +11,24 @@
 
     --font-family: "Poppins", sans-serif;
 
+}
+
+:root[data-theme="light"] {
+    --color-ico: var(--color-dark);
+    --color-bg: var(--color-white);
+    --color-secondary: #F1F1F1;
+    --text-color: var(--color-dark);
+    --color-bg-burble: var(--color-dark);
+    --color-text-burble: var(--color-white);
+}
+
+:root[data-theme="dark"] {
+    --color-ico: var(--color-white);
+    --color-bg: var(--color-dark);
+    --color-secondary: #181818;
+    --text-color: var(--color-white);
+    --color-bg-burble: var(--color-white);
+    --color-text-burble: var(--color-dark);
 }
 
 * {
@@ -30,10 +46,13 @@ html {
 }
 
 body {
+    color: var(--text-color);
+    transition: .4s ease all;
     background-color: var(--color-bg);
 }
 
 input, textarea, select {
+    color: var(--text-color);
     font-family: var(--font-family);
 }
 
@@ -53,4 +72,8 @@ img {
 
 a {
     text-decoration: none;
+}
+
+.tabler-icon {
+    stroke: var(--color-ico);
 }

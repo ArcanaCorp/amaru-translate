@@ -23,7 +23,30 @@
     align-items: center;
     justify-content: space-between;
     border-bottom: var(--border-default);
-    background-color: var(--color-white);
+    background-color: var(--color-bg);
+}
+
+.--window .--header .--content .--col {
+    display: flex;
+    gap: .8rem;
+}
+
+.--window .--header .--content .--col .--btn {
+    border-radius: var(--radius-rounded);
+    background-color: var(--color-secondary);
+}
+
+.--window .--header .--content .--col .--btn-lenguaje {
+    height: 40px;
+    padding: 0 1rem;
+    color: var(--text-color);
+}
+
+.--window .--header .--content .--col .--btn-theme {
+    width: 40px;
+    height: 40px;
+    display: grid;
+    place-items: center;
 }
 
 .--window .--main {

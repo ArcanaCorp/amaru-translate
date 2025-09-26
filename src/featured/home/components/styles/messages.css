@@ -19,8 +19,8 @@
 }
 
 .--row-burble .--burble-response {
-    color: var(--color-white);
-    background-color: var(--color-dark);
+    color: var(--color-text-burble);
+    background-color: var(--color-bg-burble);
 }
 
 .--row-burble .--btn {

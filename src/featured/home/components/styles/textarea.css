@@ -21,7 +21,6 @@
     height: 50px;
     min-width: 50px;
     place-items: center;
-    border: var(--border-default);
-    background-color: var(--color-bg);
     border-radius: var(--radius-rounded);
+    background-color: var(--color-secondary);
 }
